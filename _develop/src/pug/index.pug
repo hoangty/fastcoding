@@ -1,0 +1,117 @@
+extends ./utils/_base.pug
+
+block main
+  .mv
+    .mv-nav.effect.slideUp.delay_10
+      .mv-nav__arrow
+        .swiper-button-prev
+        .swiper-button-next
+      .swiper-pagination
+    .mv-slider.swiper
+      .swiper-wrapper
+        .swiper-slide
+          .mv-item
+            .mv-item__img.effect.maskToRight
+              img(class="fit" src="./assets/images/top/mv_img01.jpg" alt="")
+            .mv-item__cont.effect.slideUp.delay_06
+              p.mv-item__sub Designed for utility
+              p.mv-item__copy NAVY SALT &amp; PEPPER
+              a(class="mv-item__link" href="") Grear Up
+        .swiper-slide
+          .mv-item
+            .mv-item__img.effect.maskToRight
+              img(class="fit" src="./assets/images/top/mv_img01.jpg" alt="")
+            .mv-item__cont.effect.slideUp.delay_06
+              p.mv-item__sub Designed for utility
+              p.mv-item__copy NAVY SALT &amp; PEPPER
+              a(class="mv-item__link" href="") Grear Up
+        .swiper-slide
+          .mv-item
+            .mv-item__img.effect.maskToRight
+              img(class="fit" src="./assets/images/top/mv_img01.jpg" alt="")
+            .mv-item__cont.effect.slideUp.delay_06
+              p.mv-item__sub Designed for utility
+              p.mv-item__copy NAVY SALT &amp; PEPPER
+              a(class="mv-item__link" href="") Grear Up
+
+  .section.block-item.block-item--odd
+    .block-item__img.effect.maskToLeft
+      img(class="fit" src="./assets/images/top/block01_img.jpg" alt="")
+    .block-item__cont.effect.slideUp.delay_06
+      h2.item-ttl.font-ttl
+        span.item-ttl__copy VOYAGER DAYPACK
+        span.item-ttl__sub NAVY SALT &amp; PEPPER
+      .item-text
+        p Whether you’re stomping around outdoors or traversing the city, our Voyager Daypack was designed to be adaptable in all environments. Compact, lightweight and a comfortable for people of all sizes.this silhouette is versatile enough to fit just about anyone’s daily routine.
+
+  .section.block-item.block-item--reverse
+    .block-item__img.effect.maskToRight
+      img(class="fit" src="./assets/images/top/block02_img.jpg" alt="")
+    .block-item__cont.effect.slideUp.delay_06
+      h2.item-ttl.font-ttl
+        span.item-ttl__copy DRIFTER DOPP KIT
+        span.item-ttl__sub NAVY SALT &amp; PEPPER
+      .item-text
+        p Field-tested from the peaks of the Cascades down to the desert floor of Joshua Tree, the Wilderness Rucksack was built to put on some serious miles for years to come. A comfortable, dependable combination of 14oz Salt &amp; Pepper canvas, premium wool felt, and Cambara English bridle leather.routine.
+
+  .section.collection
+    .row
+      h2.section-ttl.font-ttl.effect.slideUp
+        | TANNER COLLECTIONS
+        span.section-ttl__sub
+          span NAVY SALT &amp; PEPPER
+      .collection-list
+        .item.item01
+          ul.item__img.item__img--big.effect.slideUp
+            li: img(class="fit" src="./assets/images/top/item_img01.jpg" alt="")
+            li: img(class="fit" src="./assets/images/top/item_img02.jpg" alt="")
+          .item__cont.item__cont01.effect.slideUp
+            h3.item__ttl.font-ttl NOMAD DUFFLE
+            .item__text
+              p This bag can be carried by hand, worn as a backpack or slung over a shoulder depending on your traveling needs
+            .item__btn
+              a(class="btn-readmore" href="") READ MORE
+          ul.item__img.item__img--small.effect.slideUp
+            li: img(class="fit" src="./assets/images/top/item_img03.jpg" alt="")
+            li: img(class="fit" src="./assets/images/top/item_img04.jpg" alt="")
+          .item__cont.item__cont02.effect.slideUp
+            h3.item__sub
+              span SPRUCE SALT &amp; PEPPER
+            .item__text
+              p We designed our Nomad Duffle as a versatile yet rugged piece of luggage that's just as comfortable outdoors as it is in an overhead compartment
+            .item__btn
+              a(class="btn-readmore" href="") READ MORE
+        .item.item02
+          ul.item__img.item__img--small.effect.slideUp
+            li: img(class="fit" src="./assets/images/top/item_img05.jpg" alt="")
+            li: img(class="fit" src="./assets/images/top/item_img06.jpg" alt="")
+          .item__cont.effect.slideUp
+            h3.item__ttl.font-ttl FIELD CAMERA BAG
+            .item__text
+              p Our field camera bag is constructed from 14oz Salt &amp; Pepper canvas and Cambara Meridian English bridle leather. We've put these bags through the ringer in testing and we think you'll approve of the result. Our Camera Bag is fully lined and padded, and features an adjustable shoulder strap and pad, as well as two interior flap pockets for smaller gear and film.
+            .item__btn
+              a(class="btn-readmore" href="") READ MORE
+        .item.item03
+          .item__img.item__img--full.effect.slideUp
+            img(class="fit" src="./assets/images/top/item_img07.jpg" alt="")
+          .item__cont.effect.slideUp
+            h3.item__ttl.font-ttl VOYAGER <br>DAYPACK
+
+      ul.collection-modal.effect.slideUp
+        li(data-modal="./assets/images/top/modal_img01.jpg"): img(class="fit" src="./assets/images/top/modal_img01.jpg" alt="")
+        li(data-modal="./assets/images/top/modal_img02.jpg"): img(class="fit" src="./assets/images/top/modal_img02.jpg" alt="")
+        li(data-modal="./assets/images/top/modal_img03.jpg"): img(class="fit" src="./assets/images/top/modal_img03.jpg" alt="")
+        li(data-modal="./assets/images/top/modal_img04.jpg"): img(class="fit" src="./assets/images/top/modal_img04.jpg" alt="")
+        li(data-modal="./assets/images/top/modal_img04.jpg"): img(class="fit" src="./assets/images/top/modal_img05.jpg" alt="")
+        li(data-modal="./assets/images/top/modal_img04.jpg"): img(class="fit" src="./assets/images/top/modal_img06.jpg" alt="")
+        li.modal_last: img(class="fit" src="./assets/images/top/modal_img07.jpg" alt="")
+
+  .
+    <div class="img_modal">
+    <div class="modal_after"></div>
+      <div class="modal_inner">
+        <div class="modal_close close">X</div>
+        <div class="modal_content">
+        </div>
+      </div>
+    </div>
